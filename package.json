@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fmt": "prettier --write ."
+    "fmt": "prettier --write .",
+    "lint": "eslint ."
   },
   "dependencies": {
     "next": "10.2.3",
@@ -15,6 +16,12 @@
   },
   "devDependencies": {
     "@types/react": "17.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.0",
     "typescript": "4.3.2"
   }
