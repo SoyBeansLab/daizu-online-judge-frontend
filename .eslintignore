@@ -3,3 +3,4 @@ node_modules
 
 # ignore files
 .eslintrc.js
+next.config.js
