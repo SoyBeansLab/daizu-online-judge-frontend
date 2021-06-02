@@ -13,21 +13,24 @@ export type HeaderProps = {
 }
 
 const HeaderPresentation: React.FC<HeaderProps> = ({ isSignedIn }) => {
+  const isSP = useIsSP();
   return (
     <header className={styles['header-component']}>
       <Link href='/'>
         <a className={styles['heading']}>Daizu Online Judge</a>
       </Link>
       {/* TODO spサイズのときは折りたたみメニューにする */}
-      <div className={styles['links']}>
-        <Link href='/'>
-          <a className={classNames(styles['link'], styles['-red'])}>Home</a>
-        </Link>
-        <Link href='/contents'>
-          <a className={styles['link']}>Contents</a>
-        </Link>
-        {/* TODO サインイン/アウト用のボタンを作る */}
-      </div>
+      {!isSP && (
+        <div className={styles['links']}>
+          <Link href='/'>
+            <a className={classNames(styles['link'], styles['-red'])}>Home</a>
+          </Link>
+          <Link href='/contents'>
+            <a className={styles['link']}>Contents</a>
+          </Link>
+          {/* TODO サインイン/アウト用のボタンを作る */}
+        </div>
+      )}
     </header>
   );
 }
