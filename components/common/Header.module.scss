@@ -17,10 +17,12 @@
     padding: 0 20px;
   }
 
-  > .heading {
-    @include font-heading-2;
+  > .logo {
+    height: 40px;
 
-    font-weight: 700;
+    @include sp {
+      height: 30px;
+    }
   }
 
   > .links {

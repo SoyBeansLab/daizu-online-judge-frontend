@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
 import styles from './Header.module.scss';
+import { useIsSP } from 'utils/useIsSP';
 
 // TODO storeと認証実装後
 const useIsSignedIn = () => {
@@ -17,7 +18,7 @@ const HeaderPresentation: React.FC<HeaderProps> = ({ isSignedIn }) => {
   return (
     <header className={styles['header-component']}>
       <Link href='/'>
-        <a className={styles['heading']}>Daizu Online Judge</a>
+        <img className={styles['logo']} src='/images/daizu-logo.svg' alt='logo' />
       </Link>
       {/* TODO spサイズのときは折りたたみメニューにする */}
       {!isSP && (
