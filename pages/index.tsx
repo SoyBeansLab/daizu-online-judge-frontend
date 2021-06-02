@@ -1,11 +1,14 @@
 import React from 'react';
-import ExampleContainer from '~/example';
+import styles from './index.module.scss';
 
-export default function Home() {
+const Index: React.VFC = () => {
   return (
-    <div>
-      Hello Daizu Online Judge!
-      <ExampleContainer title='タイトル' description='説明文' />
+    <div className={styles['index-page']}>
+      <img className={styles['icon']} src='/images/soy-da-.png' alt='icon' />
+      <h1 className={styles['title']}>Welcome to Daizu Online Judge!</h1>
+      <p className={styles['subtitle']}>By ICT Committee</p>
     </div>
   );
 }
+
+export default Index;

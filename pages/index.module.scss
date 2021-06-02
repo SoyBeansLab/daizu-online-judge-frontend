@@ -1,0 +1,32 @@
+@import '../styles/mixins.scss';
+
+.index-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .icon {
+    width: 220px;
+    margin-top: 200px;
+
+    @include sp {
+      margin-top: 100px;
+    }
+  }
+
+  > .title {
+    @include font-heading-1;
+
+    margin-top: 40px;
+    color: var(--color-text-base);
+    text-align: center;
+  }
+
+  > .subtitle {
+    @include font-heading-2;
+
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--color-text-base);
+  }
+}
