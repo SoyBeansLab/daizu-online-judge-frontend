@@ -1,0 +1,25 @@
+@import '../../styles/mixins.scss';
+
+.label-component {
+  @include font-normal;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 20px;
+  color: var(--color-text-sub);
+  font-weight: bold;
+
+  &.-red {
+    background-color: var(--color-accent);
+  }
+
+  &.-brown {
+    background-color: var(--color-text-base);
+  }
+
+  &.-black {
+    background-color: var(--color-text-main);
+  }
+}
