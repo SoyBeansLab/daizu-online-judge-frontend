@@ -1,6 +1,10 @@
+@import '../styles/mixins.scss';
+
 .example-component {
   > .title {
-    font-size: 20px;
+    @include font-heading-1;
+
+    color: var(--color-text-main);
   }
 
   > .description {

@@ -1,0 +1,24 @@
+@mixin font-heading-1 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.8rem;
+}
+
+@mixin font-heading-2 {
+  font-family: Roboro;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+@mixin font-heading-4 {
+  font-family: Roboro;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+@mixin font-normal {
+  font-family: Roboro;
+  font-style: normal;
+  font-size: 1rem;
+}
