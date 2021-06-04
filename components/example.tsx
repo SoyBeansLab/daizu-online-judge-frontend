@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './example.module.scss';
 
-type ExampleProps = {
+export type ExampleProps = {
   title: string;
   description: string;
 };
